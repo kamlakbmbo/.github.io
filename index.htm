@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Welcome to bmbo's Place </title>
+	<script language="JavaScript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+
+function playSound() {
+    var audio = document.getElementById("myAudio");
+    audio.play();
+}
+
+</script>
+	<bgsound src="file:///O:/Old%20folder%20and%20projects/2023/KUMK%20ALTER%20EGO/Kalimba%203.wav" loop="-1">
+</head>
+<body onload="FP_preloadImgs(/*url*/'file:///C:/Users/kamlak%20bmbo/AppData/Local/Microsoft/Windows/Temporary%20Internet%20Files/FrontPageTempDir/button5.gif', /*url*/'file:///C:/Users/kamlak%20bmbo/AppData/Local/Microsoft/Windows/Temporary%20Internet%20Files/FrontPageTempDir/button6.gif', /*url*/'file:///C:/Users/kamlak%20bmbo/AppData/Local/Microsoft/Windows/Temporary%20Internet%20Files/FrontPageTempDir/button9.jpg', /*url*/'file:///C:/Users/kamlak%20bmbo/AppData/Local/Microsoft/Windows/Temporary%20Internet%20Files/FrontPageTempDir/buttonA.jpg', /*url*/'file:///C:/Users/kamlak%20bmbo/AppData/Local/Microsoft/Windows/Temporary%20Internet%20Files/FrontPageTempDir/buttonC.jpg', /*url*/'file:///C:/Users/kamlak%20bmbo/AppData/Local/Microsoft/Windows/Temporary%20Internet%20Files/FrontPageTempDir/buttonD.jpg', /*url*/'file:///C:/Users/kamlak%20bmbo/AppData/Local/Microsoft/Windows/Temporary%20Internet%20Files/FrontPageTempDir/buttonF.jpg', /*url*/'file:///C:/Users/kamlak%20bmbo/AppData/Local/Microsoft/Windows/Temporary%20Internet%20Files/FrontPageTempDir/button10.jpg', /*url*/'file:///C:/Users/kamlak%20bmbo/AppData/Local/Microsoft/Windows/Temporary%20Internet%20Files/FrontPageTempDir/button12.jpg', /*url*/'file:///C:/Users/kamlak%20bmbo/AppData/Local/Microsoft/Windows/Temporary%20Internet%20Files/FrontPageTempDir/button13.jpg')">
+  <!-- Loading Container -->
+  <div class="loading-container" id="loadingContainer">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Main Content -->
+  <script src="script.js"></script>
+</body>
+</html>
+<style>
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffae42;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.loader {
+  border: 8px solid ##000000;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.main-content {
+  display: none;
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // Simulate a delay (you can remove this in a production environment)
+  setTimeout(function () {
+    // Hide the loading container
+    document.getElementById("loadingContainer").style.display = "none";
+
+    // Show the main content
+    document.getElementById("mainContent").style.display = "block";
+  }, 2000); // Adjust the delay time as needed
+});
+</script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+			<style>
+			.spin {
+  animation: spin 5s linear infinite; /* Adjust the duration (5s) for slower or faster spin */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=2">
+  <title>Kamlak bmbo</title>
+  <style>
+    body {
+    
+     font-family: 'Comic Sans MS', cursive;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #ffcc00;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #ff0066;
+    }
+
+    .content {
+      padding: 20px;
+      color: #9900cc;
+    }
+
+    footer {
+      background-color: #ffcc00;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .blink {
+      animation: blink 1s linear infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .button {
+      background-color: #ff0066;
+      color: white;
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .random-things {
+      margin-top: 20px;
+    }
+
+    .random-image {
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+    }
+ 
+  .spin {
+      animation: spin 5s linear infinite;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }</style>
+			</head>
+<body background="images/WBVk.gif" onload="FP_preloadImgs(/*url*/'file:///C:/Users/kamlak%20bmbo/AppData/Local/Microsoft/Windows/Temporary%20Internet%20Files/FrontPageTempDir/button5.gif', /*url*/'file:///C:/Users/kamlak%20bmbo/AppData/Local/Microsoft/Windows/Temporary%20Internet%20Files/FrontPageTempDir/button6.gif', /*url*/'file:///C:/Users/kamlak%20bmbo/AppData/Local/Microsoft/Windows/Temporary%20Internet%20Files/FrontPageTempDir/button9.jpg', /*url*/'file:///C:/Users/kamlak%20bmbo/AppData/Local/Microsoft/Windows/Temporary%20Internet%20Files/FrontPageTempDir/buttonA.jpg', /*url*/'file:///C:/Users/kamlak%20bmbo/AppData/Local/Microsoft/Windows/Temporary%20Internet%20Files/FrontPageTempDir/buttonC.jpg', /*url*/'file:///C:/Users/kamlak%20bmbo/AppData/Local/Microsoft/Windows/Temporary%20Internet%20Files/FrontPageTempDir/buttonD.jpg', /*url*/'file:///C:/Users/kamlak%20bmbo/AppData/Local/Microsoft/Windows/Temporary%20Internet%20Files/FrontPageTempDir/buttonF.jpg', /*url*/'file:///C:/Users/kamlak%20bmbo/AppData/Local/Microsoft/Windows/Temporary%20Internet%20Files/FrontPageTempDir/button10.jpg', /*url*/'file:///C:/Users/kamlak%20bmbo/AppData/Local/Microsoft/Windows/Temporary%20Internet%20Files/FrontPageTempDir/button12.jpg', /*url*/'file:///C:/Users/kamlak%20bmbo/AppData/Local/Microsoft/Windows/Temporary%20Internet%20Files/FrontPageTempDir/button13.jpg')">
+
+  <header>
+  </header>
+
+  <div class="content">
+    <div class="random-things" id="movingContent">
+    <div class="random-things">
+    <div style="position: absolute; top: 116px; left: 160px; width: 870px; height: 47px; z-index: 1">
+		&nbsp;<p><font color="#FFCC00">
+		<span class="bio-text" data-bind="visible: !editingText(), html: bioPartOne" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">
+		Kamlak Bmbo is an instrumental artist from Ethiopia, whose real name is 
+		Kamlak Taye. He is known for his unique sound that&nbsp;</span><span data-bind="visible: !editingText() &amp;&amp; moreText(), html: bioPartTwo" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">blends 
+		Ethiopian traditional music with modern and contemporary elements. 
+		Kamlak began his musical journey in 2019 and has since been making a 
+		name for himself in the Ethiopian music scene as a rising star in the 
+		instrumental music genre.</span><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none">&nbsp;</span></font></div>
+      <p>
+		<img border="0" src="images/psychedelic.gif" width="432" height="14"></p>
+		<p><font color="#FFCC00" size="6" face="Cooper Std Black">Bmbo's Place
+		</font><font color="#FFCC00" size="6" face="Geez Edit 2001">&#4840;&#4704;&#4637;&#4710; &#4710;&#4723;</font></p>
+		<p>&nbsp;</p>
+		<p><font size="6" color="#FFCC00">Artworq</font><img border="0" src="images/sunflower.gif" width="80" height="100"><font size="6" color="#FFCC00">&#4768;&#4653;&#4725;&#4808;&#4653;&#4677;</font></p>
+      <img class="random-image" src="images/nab.jpg" alt="Random Image 1" width="4500" height="5625">
+      <img class="random-image" src="images/the%20f;ying%20thin%202.jpg" alt="Random Image 2" width="4500" height="5625">
+      <img class="random-image" src="images/They%20are%20from%20sun%20they%20called%20bmbois.jpg" alt="Random Image 3" width="1080" height="1350">
+    	<p>&nbsp;</p>
+		<div style="position: absolute; top: 745px; left: 370px; width: 115px; height: 23px; z-index: 10">
+			<a href="https://www.kamlakbmbo.online/art-works">
+			<img border="0" id="img5" src="buttonB.jpg" height="20" width="100" alt="SeeMore " onmouseover="FP_swapImg(1,0,/*id*/'img5',/*url*/'buttonC.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img5',/*url*/'buttonB.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img5',/*url*/'buttonD.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img5',/*url*/'buttonC.jpg')" fp-style="fp-btn: Simple Block 3" fp-title="SeeMore "></a><font color="#FFCC00">
+			</font></div>
+		<p>
+		<img border="0" src="images/sunonwater.gif" width="130" height="120"></p>
+		<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p><font size="7" color="#FFCC00">MUSIQA &#4633;&#4826;&#4675;</font></p>
+		<p>&nbsp;</p>
+		<div style="position: absolute; top: 924px; left: 352px; width: 525px; height: 525px; z-index: 15">
+			<a href="https://drive.google.com/file/d/1TLAkRJIVZz9jQ3PNprY1Pt27I-GDflu8/view?usp=drive_link">
+			<img border="0" src="../../Documents/My%20Web%20Sites/images/WUccUT.gif" width="525" height="525"></a></div>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>
+			
+		<div style="position: absolute; top: 1006px; left: 22px; width: 301px; height: 456px; z-index: 14">
+		
+		<iframe style="border: 0 none; width: 253px; height: 252px;" src="https://bandcamp.com/EmbeddedPlayer/album=407418117/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=1353582937/transparent=true/" seamless name="I1"><a href="https://kamlakbmbo.bandcamp.com/album/nostalgia-remastered">Nostalgia Remastered by Kamlak Bmbo</a></iframe>
+
+	
+	</div>
+	<p>&nbsp;</p>
+		<p>&nbsp;</p>
+	<p>&nbsp;</p>
+
+	<head>
+	</div>
+			<div style="position: absolute; top: 752px; left: 158px; width: 87px; height: 35px; z-index: 11">
+				<img border="0" src="images/CLICK2.gif" width="48" height="9"></div>
+	</head><div style="position: absolute; top: 504px; left: 733px; width: 220px; height: 220px; z-index: 5">
+      <img class="random-image" src="images/brown.jpg" alt="Random Image 1" width="1080" height="1350"></div>
+		<div style="position: absolute; top: 513px; left: 492px; width: 220px; height: 220px; z-index: 5">
+      <img class="random-image" src="images/kowlage.jpg" alt="Random Image 1" width="1080" height="1350"></div>
+		<div style="position: absolute; top: 519px; left: 257px; width: 220px; height: 220px; z-index: 6">
+      <img class="random-image" src="images/sun.jpg" alt="Random Image 1" width="1080" height="1350"></div>
+		<div style="position: absolute; top: 83px; left: 158px; width: 84px; height: 80px; z-index: 4">
+			<img border="0" src="images/mushroom.gif" width="84" height="80"></div>
+		<div style="position: absolute; top: 186px; left: 832px; width: 80px; height: 100px; z-index: 2">
+&nbsp;</div>
+    </div>
+    
+  </div>
+
+  <footer class="blink">
+    <div style="position: absolute; top: 408px; left: -21px; width: 270px; height: 270px; z-index: -2">
+		<img border="0" src="images/8i65eAzAT.gif" width="264" height="265"></div>
+  </footer>
+<div style="position: absolute; top: 402px; left: 258px; width: 109px; height: 51px; z-index: 3">
+&nbsp;</div>
+<div style="position: absolute; top: 383px; left: -213px; width: 500px; height: 47px; z-index: 4">
+	<img border="0" src="images/flyingparrots.gif" width="500" height="47">
+</div>
+<div style="position: absolute; top: 382px; left: 874px; width: 330px; height: 47px; z-index: 4">
+	<img border="0" src="images/flyingparrots.gif" width="221" height="47"></div>
+
+	<div style="position: absolute; top: 1000px; left: 894px; width: 287px; height: 239px; z-index: 7">
+
+	<img class="spin" src="images/ProductImage.jpg" alt="Spinning Image" width="238" height="213">&nbsp;
+	
+	</div>
+	
+    <p>
+	&nbsp;</p>
+	<p>
+	&nbsp;</p>
+	<p>
+	<img border="0" src="images/keepcomingback.gif" width="400" height="60"></p>
+<div style="position: absolute; top: 646px; left: 899px; width: 270px; height: 270px; z-index: 9">
+		<img border="0" src="images/8i65eAzAT.gif" width="292" height="292"></div>
+	<div style="position: absolute; top: 433px; left: 956px; width: 89px; height: 87px; z-index: 9">
+		<img border="0" src="images/sunAnimated.gif" width="75" height="71"></div>
+		
+			
+<div style="position: absolute; top: 778px; left: 370px; width: 115px; height: 23px; z-index: 10">
+	<a href="https://www.kamlakbmbo.online/art-works">
+	<img border="0" id="img7" src="button11.jpg" height="20" width="100" alt="SeeMore " onmouseover="FP_swapImg(1,0,/*id*/'img7',/*url*/'button12.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img7',/*url*/'button11.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img7',/*url*/'button13.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img7',/*url*/'button12.jpg')" fp-style="fp-btn: Simple Block 3" fp-title="SeeMore "></a><font color="#FFCC00">
+	</font></div>
+<div style="position: absolute; top: 778px; left: 254px; width: 115px; height: 23px; z-index: 10">
+	<a href="https://www.kamlakbmbo.online/art-works">
+	<img border="0" id="img6" src="buttonE.jpg" height="20" width="100" alt="SeeMore " onmouseover="FP_swapImg(1,0,/*id*/'img6',/*url*/'buttonF.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img6',/*url*/'buttonE.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img6',/*url*/'button10.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img6',/*url*/'buttonF.jpg')" fp-style="fp-btn: Simple Block 3" fp-title="SeeMore "></a><font color="#FFCC00">
+	</font></div>
+<div style="position: absolute; top: 746px; left: 255px; width: 115px; height: 23px; z-index: 10">
+	<font color="#FFCC00"><a href="https://www.kamlakbmbo.online/art-works">
+	<img border="0" id="img1" src="button8.jpg" height="20" width="100" alt="SeeMore " fp-style="fp-btn: Simple Block 3" fp-title="SeeMore " onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'button9.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'button8.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'buttonA.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'button9.jpg')"></a>
+	</font></div>
+<p><font color="#FFCC00">Kamlak Bmbo 2024/2016 E.C </font></p>
+	<div style="position: absolute; top: 701px; left: -131px; width: 205px; height: 184px; z-index: 13">
+		<img border="0" src="images/earth-round-white_background.gif" width="128" height="128"></div>
+		<head>
+		 <style<.spin {
+      animation: spin 5s linear infinite;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    
+	<div style="position: absolute; top: 791px; left: 933px; width: 281px; height: 253px; z-index: 7">
+	</head>
+		
+		<audio id="myAudio" src="https://t4.bcbits.com/stream/02e137cc1600b857a7c6985f21a0bcfc/mp3-128/1823644109?p=0&ts=1707205357&t=2861afe897e6ccaff9333b239c109d0a3c8ccaff&token=1707205357_5b4db1f5efa23e11bf9f8bd0d34a24aeed846419" preload="auto"></audio>
+
+    <script src="script.js"></script>
+			 </body>
+</html>
